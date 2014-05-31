@@ -1,0 +1,33 @@
+/* Disable background 4px border around images */
+.reveal section img {
+  border: none;
+  background: none;
+}
+
+/* Blow image up to full screen size */
+.reveal section img
+{
+  height: auto;
+  width: 100%;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 2%;
+}
+
+/* Blow iframe up to full screen size */
+.reveal section iframe
+{
+  height: 100%;
+  width: 100%;
+  margin: 2%;
+}
+
+/* Override the default uppercase text-transform
+   for h2-h6 (but retain for h1) */
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-transform: none;
+}
