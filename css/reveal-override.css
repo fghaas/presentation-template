@@ -30,6 +30,17 @@ body,
   font-weight: normal;
 }
 
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal a {
+  font-family: inherit;
+  font-weight: bold;
+}
+
 /* Override the default uppercase text-transform
    for h2-h6 (but retain for h1) */
 .reveal h2,
