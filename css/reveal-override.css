@@ -24,6 +24,12 @@
   margin: 2%;
 }
 
+body,
+.reveal {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+}
+
 /* Override the default uppercase text-transform
    for h2-h6 (but retain for h1) */
 .reveal h2,
