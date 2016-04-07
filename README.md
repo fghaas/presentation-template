@@ -59,6 +59,15 @@ server.modules      += ( "mod_userdir" )
 userdir.path         = "public_html"
 ```
 
+Use the provided `.gitmodules` file to automatically clone local
+copies of `reveal.js` and
+[`qrcodejs`](https://davidshimjs.github.io/qrcodejs/):
+
+```bash
+git submodule init
+git submodule update
+```
+
 Then, create a symlink to your Git checkout in `~/public_html`, such as:
 
 ```bash
