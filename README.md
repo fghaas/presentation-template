@@ -14,7 +14,10 @@ years:
 - I use sans-serif fonts
   ([Cabin](https://www.google.com/fonts/specimen/Cabin) is my current
   favorite), with a typewriter-style monospace font (currently,
-  Shadows into Light).
+  [Special Elite](https://www.google.com/fonts/specimen/Special+Elite))
+  for links and highlights and another, simpler monospace font 
+  ([Source Code Pro](https://www.google.com/fonts/specimen/Source+Code+Pro))
+  for code snippets.
 
 - While I'm presenting, I want the progress bar and controls off.
   They're visually distracting, and I control the presentation from a
