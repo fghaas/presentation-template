@@ -39,9 +39,13 @@ Markdown-authored sections.
 This repo has two branches, one named `master` and one
 `gh-pages`. Make sure you do your regular work in `master`, then merge
 into `gh-pages` and push both branches. Your presentation will then be
-rendered to [GitHub Pages](https://pages.github.com/), you can share
-it immediately, and GitHub will host it for you, indefinitely, for
-free.
+rendered to [GitHub Pages](https://pages.github.com/) at a URL of the
+form:
+
+- http://*username*.github.io/*presentation-repo-name*
+
+You can share the URL immediately, and GitHub will host it for you,
+indefinitely, for free.
 
 
 ### Running things locally
