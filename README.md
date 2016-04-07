@@ -1,17 +1,20 @@
 # My reveal.js presentation template
 
 I keep this repo around as a template for presentation slide decks. It
-is based on reveal.js by Hakim El-Hattab (and contributors), and
-reflects some presentation "rules" I've defined for myself through
-trial and error over a few years:
+is based on [`reveal.js`](https://github.com/hakimel/reveal.js/) by
+Hakim El-Hattab (and contributors), and reflects some presentation
+"rules" I've defined for myself through trial and error over a few
+years:
 
 - I use a white background, with black as the primary foreground
   color. I've found this to work best even with low-quality projectors
   and under suboptimal lighting conditions, even for talk attendees
   with reduced eyesight or seated in the very back row.
 
-- I use sans-serif fonts (Cabin is my current favorite), with a
-  typewriter-style monospace font (currently, Shadows into Light).
+- I use sans-serif fonts
+  ([Cabin](https://www.google.com/fonts/specimen/Cabin) is my current
+  favorite), with a typewriter-style monospace font (currently,
+  Shadows into Light).
 
 - While I'm presenting, I want the progress bar and controls off.
   They're visually distracting, and I control the presentation from a
@@ -24,7 +27,7 @@ trial and error over a few years:
   on your phone.
 
 - I always write my slides in Markdown, and make heavy use of speaker
-  notes through the reveal.js notes plugin.
+  notes through the `reveal.js` notes plugin.
 
 
 ## How to use
@@ -36,8 +39,34 @@ Markdown-authored sections.
 This repo has two branches, one named `master` and one
 `gh-pages`. Make sure you do your regular work in `master`, then merge
 into `gh-pages` and push both branches. Your presentation will then be
-rendered to GitHub Pages, you can share it immediately, and GitHub
-will host it for you, indefinitely, for free.
+rendered to [GitHub Pages](https://pages.github.com/), you can share
+it immediately, and GitHub will host it for you, indefinitely, for
+free.
+
+
+### Running things locally
+
+If you want to run your slides locally, rather than on GitHub Pages,
+just drop them into the `DocumentRoot` of a web server, like Apache or
+[`lighttpd`](https://www.lighttpd.net/).
+
+For `lighttpd`, you may also want to set the following options:
+
+```
+dir-listing.encoding = "utf-8"
+server.dir-listing   = "enable"
+server.modules      += ( "mod_userdir" )
+userdir.path         = "public_html"
+```
+
+Then, create a symlink to your Git checkout in `~/public_html`, such as:
+
+```bash
+ln -s ~/git/my-presentation ~/public_html/
+```
+
+... and access your presentation from
+http://localhost/~yourusername/my-presentation/
 
 
 ## Do you find this helpful?
