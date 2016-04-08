@@ -32,10 +32,13 @@ years:
 - I always write my slides in Markdown, and make heavy use of speaker
   notes through the `reveal.js` notes plugin.
 
-For more information, see my OSCON 2014 presentation:
+For more information, watch my OSCON 2014 presentation:
 
 [![Thumbnail of OSCON 2014 presentation video on YouTube](images/OSCON2014-thumbnail.png)](https://youtu.be/4gfsEcD9b94)
 
+Of course, the slides for that talk use this same approach, so [they
+are hosted here on GitHub Pages](http://fghaas.github.io/oscon2014-presentationtoolbox/),
+and you can also examine [the source code for them](https://github.com/fghaas/oscon2014-presentationtoolbox).
 
 ## How to use
 
