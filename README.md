@@ -39,9 +39,11 @@ For more information, see my OSCON 2014 presentation:
 
 ## How to use
 
-Simple: just fork this repo and drop Markdown files into `markdown`
-and images into `images`. Then, fix up `index.html` to include your
-Markdown-authored sections.
+Simple: just
+[fork this repo](https://github.com/fghaas/presentation-template/fork)
+and drop Markdown files into `markdown` and images into
+`images`. Then, fix up `index.html` to include your Markdown-authored
+sections.
 
 This repo has two branches, one named `master` and one
 `gh-pages`. Make sure you do your regular work in `master`, then merge
