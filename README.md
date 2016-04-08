@@ -32,12 +32,21 @@ years:
 - I always write my slides in Markdown, and make heavy use of speaker
   notes through the `reveal.js` notes plugin.
 
+For more information, watch my OSCON 2014 presentation:
+
+[![Thumbnail of OSCON 2014 presentation video on YouTube](images/OSCON2014-thumbnail.png)](https://youtu.be/4gfsEcD9b94)
+
+Of course, the slides for that talk use this same approach, so [they
+are hosted here on GitHub Pages](http://fghaas.github.io/oscon2014-presentationtoolbox/),
+and you can also examine [the source code for them](https://github.com/fghaas/oscon2014-presentationtoolbox).
 
 ## How to use
 
-Simple: just fork this repo and drop Markdown files into `markdown`
-and images into `images`. Then, fix up `index.html` to include your
-Markdown-authored sections.
+Simple: just
+[fork this repo](https://github.com/fghaas/presentation-template/fork)
+and drop Markdown files into `markdown` and images into
+`images`. Then, fix up `index.html` to include your Markdown-authored
+sections.
 
 This repo has two branches, one named `master` and one
 `gh-pages`. Make sure you do your regular work in `master`, then merge
