@@ -1,0 +1,13 @@
+.qrcode {
+    img {
+        /* Override "block" display which qrcode.js sets by default, to allow
+           proper centering */
+        display: inline !important;
+        height: 70% !important;
+        width: auto !important;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white !important;
+        padding: 1em;
+    }
+}
