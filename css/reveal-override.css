@@ -4,6 +4,7 @@
 .reveal {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: normal;
+  /* Make sure keyboard shortcuts help is visible */
   /* Blow iframe up to full screen size */ }
   .reveal section img {
     /* Disable background 4px border around images */
@@ -15,6 +16,8 @@
     max-width: 80%;
     max-height: 80%;
     margin: 2%; }
+  .reveal .overlay-help .viewport th, .reveal .overlay-help .viewport td {
+    color: white; }
   .reveal iframe {
     height: 90%;
     width: 100%;

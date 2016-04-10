@@ -19,6 +19,13 @@
         margin: 2%;
     }
 
+    /* Make sure keyboard shortcuts help is visible */
+    .overlay-help .viewport {
+        th, td {
+            color: white;
+        }
+    }
+
     /* Blow iframe up to full screen size */
     iframe {
         height: 90%;
