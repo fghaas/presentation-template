@@ -1,0 +1,116 @@
+@import url(//fonts.googleapis.com/css?family=Cabin:400,700);
+@import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+.reveal {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: normal;
+
+    section img {
+        /* Disable background 4px border around images */
+        border: none;
+        background: none;
+
+        /* Blow image up to full screen size */
+        height: auto;
+        width: 100%;
+        max-width: 80%;
+        max-height: 80%;
+        margin: 2%;
+    }
+
+    /* Blow iframe up to full screen size */
+    iframe {
+        height: 90%;
+        width: 100%;
+        margin: 2%;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Cabin", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-stroke: 1px black;
+        color: white;
+        text-shadow:
+            3px 3px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+
+    .progress span {
+        background-color: black
+    }
+
+    .controls {
+        div.navigate-up, div.navigate-up.enabled {
+            border-bottom-color: black
+        }
+
+        div.navigate-down, div.navigate-down.enabled {
+            border-top-color: black
+        }
+
+        div.navigate-left, div.navigate-left.enabled {
+            border-right-color: black
+        }
+
+        div.navigate-right, div.navigate-right.enabled {
+            border-left-color: black
+        }
+    }
+
+    a {
+        font-family: "Special Elite", monospace !important;
+    }
+
+    code {
+        font-family: "Special Elite", monospace !important;
+        color: black !important;
+        text-shadow: none;
+        text-transform: none;
+    }
+
+    pre code {
+        font-family: "Source Code Pro", monospace !important;
+        background: inherit !important;
+        text-shadow: none;
+        text-transform: none;
+    }
+
+    .stamp {
+        position: absolute;
+        color: red !important;
+        font-size: 6em !important;
+        font-family: "Special Elite" !important;
+        transform: rotate(-45deg);
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-20vw;
+        margin-top:-10vh;
+        text-shadow: none;
+    }
+}
+
+@media print {
+    .reveal {
+        h1, h2, h3, h4, h5, h6 {
+            color: black;
+        }
+    }
+}
