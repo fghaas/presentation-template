@@ -24,7 +24,7 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
+        <section id="qrcode" data-menu-title="QR code">
           <div class="qrcode" id="qrcode-talk"/>
           <p><a href="https://example.com/link/to/this/talk" target="_blank"
                 id="talk">https://example.com/link/to/this/talk</a></p>
@@ -97,6 +97,14 @@ Reveal.initialize({
     theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
     transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
 
+    menu: {
+        themes: false,
+        transitions: false,
+        openButton: false,
+        openSlideNumber: true,
+        markers: true
+    },
+
     // Optional libraries used to extend on reveal.js
     dependencies: [
         { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -104,7 +112,8 @@ Reveal.initialize({
         { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
         { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'reveal.js-menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
     ]
 });
     </script>

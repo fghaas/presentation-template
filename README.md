@@ -93,8 +93,9 @@ userdir.path         = "public_html"
 ```
 
 Use the provided `.gitmodules` file to automatically clone local
-copies of `reveal.js` and
-[`qrcodejs`](https://davidshimjs.github.io/qrcodejs/):
+copies of `reveal.js`,
+[`qrcodejs`](https://davidshimjs.github.io/qrcodejs/), and
+[`reveal.js-menu`](https://github.com/denehyg/reveal.js-menu):
 
 ```bash
 git submodule init
