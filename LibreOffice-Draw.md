@@ -29,7 +29,8 @@ and add CSS styles for size, positioning etc.
 ## Dealing with buggy export
 
 It seems that LibreOffice Draw does not always reliably export a
-selection as SVG :-(  If you experience this, try the following:
+selection as SVG :-(  If you experience this, you may have more luck
+with the following approach:
 
 -   Use the selection tool to draw a box around the area you want
     to export, and note the exact dimensions of the box.
