@@ -77,6 +77,12 @@ If you are using GitHub Pages, make sure that the latest versions of
 the generated `.css` files are committed and pushed to the remote
 `gh-pages` branch.
 
+### Diagrams
+
+If you draw diagrams in LibreOffice Draw, see
+[the documentation on incorporating LibreOffice Draw diagrams into
+reveal.js presentations](LibreOffice-Draw.md).
+
 ### Running things locally
 
 If you want to run your slides locally, rather than on GitHub Pages,
