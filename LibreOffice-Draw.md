@@ -26,5 +26,22 @@ Finally, include it in your Markdown, e.g.
 
 and add CSS styles for size, positioning etc.
 
+## Dealing with buggy export
+
+It seems that LibreOffice Draw does not always reliably export a
+selection as SVG :-(  If you experience this, try the following:
+
+-   Use the selection tool to draw a box around the area you want
+    to export, and note the exact dimensions of the box.
+-   `Format` > `Page`
+    -   Set the width and height to those dimensions
+    -   Set all the margins to zero
+-   Select all objects and move them to be inside the new page
+    dimensions.
+-   Export as before, but this time do not select the `Selection`
+    checkbox.
+
+## Importing from other diagramming software
+
 Of course, you can apply a similar approach for diagrams from Inkscape
 or any other tool which exports to SVG.
