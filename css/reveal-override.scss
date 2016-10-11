@@ -10,6 +10,8 @@
         /* Disable background 4px border around images */
         border: none;
         background: none;
+        /* Disable box shadow around images */
+	box-shadow: none;
 
         /* Blow image up to full screen size */
         height: auto;
