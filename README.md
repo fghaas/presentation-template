@@ -65,13 +65,14 @@ The theme is defined in `css/reveal-override.scss` using
 [Sass](http://sass-lang.com/); if you update this, you will need to
 re-compile into `css/reveal-override.css` via:
 
-    $ sass --sourcemap css
+    $ sass --sourcemap css/reveal-override.scss css/reveal-override.css
 
 If you are doing continual development on the file, then run this in
 the background to automatically re-compile every time the `.scss` file
 is changed:
 
-    $ sass --watch --sourcemap css
+    $ sass --watch --sourcemap sass --sourcemap css/reveal-override.scss \ 
+      css/reveal-override.css -t expanded
 
 If you are using GitHub Pages, make sure that the latest versions of
 the generated `.css` files are committed and pushed to the remote
