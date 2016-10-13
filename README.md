@@ -71,8 +71,7 @@ If you are doing continual development on the file, then run this in
 the background to automatically re-compile every time the `.scss` file
 is changed:
 
-    $ sass --watch --sourcemap sass --sourcemap css/reveal-override.scss \ 
-      css/reveal-override.css -t expanded
+    $ sass --watch css:css -t expanded
 
 If you are using GitHub Pages, make sure that the latest versions of
 the generated `.css` files are committed and pushed to the remote
