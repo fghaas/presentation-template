@@ -62,6 +62,7 @@
 }
 .reveal a {
   font-family: "Special Elite", monospace !important;
+  white-space: nowrap;
 }
 .reveal code {
   font-family: "Special Elite", monospace !important;
