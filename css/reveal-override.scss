@@ -5,6 +5,11 @@
 .reveal {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: normal;
+    color: #555555;
+
+    strong {
+      color: black;
+    }
 
     section img {
         /* Disable background 4px border around images */
@@ -47,18 +52,31 @@
         font-size: 1.5em;
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Cabin", sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
+    h1, h2 {
         text-stroke: 1px black;
-        color: white;
         text-shadow:
             3px 3px 0 #000,
             -1px -1px 0 #000,
             1px -1px 0 #000,
             -1px 1px 0 #000,
             1px 1px 0 #000;
+        color: white;
+    }
+
+    h3, h4, h5, h6 {
+        text-shadow: none;
+        color: grey;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Cabin", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+	strong {
+            color: black;
+	    text-shadow: none;
+	    font-weight: bold;
+	}
     }
 
     .progress span {
