@@ -113,6 +113,12 @@ Reveal.initialize({
          38: 'prev'
     },
 
+    multiplex: {
+        secret: null,
+        id: 'insert-id-here',
+        url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
+    },
+
     // Optional libraries used to extend on reveal.js
     dependencies: [
         { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -121,7 +127,9 @@ Reveal.initialize({
         { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
         { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
         { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'reveal.js/plugin/multiplex/master.js', async: true },
         { src: 'reveal.js-menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
+        { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
     ]
 });
     </script>
