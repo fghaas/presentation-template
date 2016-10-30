@@ -7,3 +7,6 @@
 [submodule "reveal.js-menu"]
 	path = reveal.js-menu
 	url = https://github.com/denehyg/reveal.js-menu
+[submodule "highlight.js"]
+	path = highlight.js
+	url = https://github.com/isagalaev/highlight.js
