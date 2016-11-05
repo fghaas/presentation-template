@@ -65,13 +65,13 @@ The theme is defined in `css/reveal-override.scss` using
 [Sass](http://sass-lang.com/); if you update this, you will need to
 re-compile into `css/reveal-override.css` via:
 
-    $ sass css/reveal-override.scss css/reveal-override.css -t expanded
+    $ sass css/reveal-override.scss css/reveal-override.css -t expanded -E utf-8
 
 If you are doing continual development on the file, then run this in
 the background to automatically re-compile every time the `.scss` file
 is changed:
 
-    $ sass --watch css:css -t expanded
+    $ sass --watch css:css -t expanded -E utf-8
 
 If you are using GitHub Pages, make sure that the latest versions of
 the generated `.css` files are committed and pushed to the remote
@@ -126,7 +126,7 @@ git submodule update
 Generate the CSS files:
 
 ```bash
-sass --update css:css -t expanded
+sass --update css:css -t expanded -E utf-8
 ```
 
 Then, create a symlink to your Git checkout in `~/public_html`, such as:
