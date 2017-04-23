@@ -79,6 +79,21 @@ the generated `.css` files are committed and pushed to the remote
 
 ### Diagrams
 
+I would generally recommend that you incorporate graphs and diagrams
+in your presentation using the
+[SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) format,
+as it ensures that your graphics will look good at any screen
+resolution — and it also saves bandwidth and improves loading times,
+compared to high-resolution raster graphics.
+
+My preferred way of drawing diagrams is
+[draw.io](https://www.draw.io/), which has a decent
+[SVG export](https://support.draw.io/display/DO/Exporting+Files#ExportingFiles-SVG)
+facility. Another option is to export SVG from
+[Google Drawings](https://docs.google.com/drawings), or
+[Dia](http://dia-installer.de/), or even to draw SVG natively in
+[Inkscape](https://inkscape.org/).
+
 If you draw diagrams in LibreOffice Draw, see
 [the documentation on incorporating LibreOffice Draw diagrams into
 reveal.js presentations](LibreOffice-Draw.md).
