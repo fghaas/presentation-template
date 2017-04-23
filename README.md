@@ -123,10 +123,10 @@ git submodule init
 git submodule update
 ```
 
-Generate the reveal-override.css file:
+Generate the CSS files:
 
 ```bash
-sass --update css/reveal-override.scss
+sass --update css:css -t expanded
 ```
 
 Then, create a symlink to your Git checkout in `~/public_html`, such as:
