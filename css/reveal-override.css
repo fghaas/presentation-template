@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/css?family=Cabin:400,700);
+@import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+.reveal {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  color: #555555;
+  /* Make sure keyboard shortcuts help is visible */
+  /* Blow iframe up to full screen size */
+}
+.reveal strong {
+  color: black;
+}
+.reveal section img {
+  /* Disable background 4px border around images */
+  border: none;
+  background: none;
+  /* Disable box shadow around images */
+  box-shadow: none;
+  /* Blow image up to full screen size */
+  height: auto;
+  width: 100%;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 2%;
+}
+.reveal .overlay-help .viewport th, .reveal .overlay-help .viewport td {
+  color: white;
+}
+.reveal iframe {
+  height: 90%;
+  width: 100%;
+  margin: 2%;
+}
+.reveal h1 {
+  font-size: 5em;
+}
+.reveal h2 {
+  font-size: 3em;
+}
+.reveal h3 {
+  font-size: 1.5em;
+}
+.reveal h1, .reveal h2 {
+  text-stroke: 1px black;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: white;
+}
+.reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  text-shadow: none;
+  color: grey;
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: "Cabin", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.reveal h1 strong, .reveal h2 strong, .reveal h3 strong, .reveal h4 strong, .reveal h5 strong, .reveal h6 strong {
+  color: black;
+  text-shadow: none;
+  font-weight: bold;
+}
+.reveal .progress span {
+  background-color: black;
+}
+.reveal sub {
+  font-size: 25%;
+}
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: black;
+}
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: black;
+}
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: black;
+}
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: black;
+}
+.reveal a {
+  font-family: "Special Elite", monospace !important;
+  white-space: nowrap;
+}
+.reveal code {
+  font-family: "Special Elite", monospace !important;
+  color: black !important;
+  text-shadow: none;
+  text-transform: none;
+}
+.reveal pre code {
+  font-family: "Source Code Pro", monospace !important;
+  background: inherit !important;
+  text-shadow: none;
+  text-transform: none;
+}
+.reveal blockquote, .reveal q {
+  quotes: "“" "”" "‘" "’";
+}
+.reveal blockquote:before, .reveal q:before {
+  content: open-quote;
+}
+.reveal blockquote:after, .reveal q:after {
+  content: close-quote;
+}
+.reveal blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+.reveal blockquote:before, .reveal blockquote:after {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+.reveal blockquote:before {
+  margin-right: 0.25em;
+}
+.reveal blockquote:after {
+  margin-left: 0.25em;
+}
+.reveal blockquote p {
+  display: inline;
+}
+.reveal .stamp {
+  position: absolute;
+  color: red !important;
+  font-size: 6em !important;
+  font-family: "Special Elite" !important;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20vw;
+  margin-top: -10vh;
+  text-shadow: none;
+}
+.reveal .caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: small;
+}
+
+@media print {
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    color: black;
+  }
+}
+.qrcode img {
+  /* Override "block" display which qrcode.js sets by default, to allow
+     proper centering */
+  display: inline !important;
+  height: 70% !important;
+  width: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white !important;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=reveal-override.css.map */
