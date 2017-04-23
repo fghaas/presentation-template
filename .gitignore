@@ -2,3 +2,4 @@ shellinaboxd.screen.pid
 /.sass-cache
 /css/*.css.map
 /css/qrcode.css
+/css/shellinabox.css
