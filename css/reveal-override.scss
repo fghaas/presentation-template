@@ -83,6 +83,10 @@
         background-color: black
     }
 
+    sub {
+        font-size: 25%;
+    }
+
     .controls {
         div.navigate-up, div.navigate-up.enabled {
             border-bottom-color: black
@@ -120,6 +124,42 @@
         text-transform: none;
     }
 
+    blockquote, q {
+        quotes: "“" "”" "‘" "’";
+        &:before {
+            content: open-quote;
+        }
+        &:after {
+            content: close-quote;
+        }
+    }
+
+    blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+
+        &:before, &:after {
+            color: #ccc;
+            font-size: 4em;
+            line-height: 0.1em;
+            vertical-align: -0.4em;
+        }
+
+        &:before {
+            margin-right: 0.25em;
+        }
+
+        &:after {
+            margin-left: 0.25em;
+        }
+
+        p {
+            display: inline;
+        }
+    }
+
     .stamp {
         position: absolute;
         color: red !important;
@@ -149,3 +189,5 @@
         }
     }
 }
+
+@import 'qrcode';

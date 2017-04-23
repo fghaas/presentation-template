@@ -65,17 +65,38 @@ The theme is defined in `css/reveal-override.scss` using
 [Sass](http://sass-lang.com/); if you update this, you will need to
 re-compile into `css/reveal-override.css` via:
 
-    $ sass css/reveal-override.scss css/reveal-override.css -t expanded
+    $ sass css/reveal-override.scss css/reveal-override.css -t expanded -E utf-8
 
 If you are doing continual development on the file, then run this in
 the background to automatically re-compile every time the `.scss` file
 is changed:
 
-    $ sass --watch css:css -t expanded
+    $ sass --watch css:css -t expanded -E utf-8
 
 If you are using GitHub Pages, make sure that the latest versions of
 the generated `.css` files are committed and pushed to the remote
 `gh-pages` branch.
+
+### Diagrams
+
+I would generally recommend that you incorporate graphs and diagrams
+in your presentation using the
+[SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) format,
+as it ensures that your graphics will look good at any screen
+resolution — and it also saves bandwidth and improves loading times,
+compared to high-resolution raster graphics.
+
+My preferred way of drawing diagrams is
+[draw.io](https://www.draw.io/), which has a decent
+[SVG export](https://support.draw.io/display/DO/Exporting+Files#ExportingFiles-SVG)
+facility. Another option is to export SVG from
+[Google Drawings](https://docs.google.com/drawings), or
+[Dia](http://dia-installer.de/), or even to draw SVG natively in
+[Inkscape](https://inkscape.org/).
+
+If you draw diagrams in LibreOffice Draw, see
+[the documentation on incorporating LibreOffice Draw diagrams into
+reveal.js presentations](LibreOffice-Draw.md).
 
 ### Running things locally
 
@@ -100,6 +121,12 @@ copies of `reveal.js`,
 ```bash
 git submodule init
 git submodule update
+```
+
+Generate the CSS files:
+
+```bash
+sass --update css:css -t expanded -E utf-8
 ```
 
 Then, create a symlink to your Git checkout in `~/public_html`, such as:
