@@ -3,10 +3,28 @@
 Note: Add main section slides here.
 
 
-## Foo
+## Level 2 heading
+
+Some additional information
 
 
-## Bar
+### Level 3 heading
+
+* A bullet list.
+* Use these sparingly.
 
 
-## Baz
+Just some text
+
+```bash
+#!/bin/sh
+
+# This is a code snippet.
+# It comes with syntax highlighting.
+
+NUM=5
+
+for i in `seq $NUM`; do
+  echo "hello world $i"
+done
+```
