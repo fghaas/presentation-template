@@ -174,12 +174,15 @@
         margin-top:-10vh;
         text-shadow: none;
     }
+    
+    .caption, .legal {
+        font-size: small;
+    }
 
     .caption {
         position: absolute;
 	right: 0;
 	bottom: 0;
-        font-size: small;
     }
 }
 
