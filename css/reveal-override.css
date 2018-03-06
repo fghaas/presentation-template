@@ -139,11 +139,13 @@
   margin-top: -10vh;
   text-shadow: none;
 }
+.reveal .caption, .reveal .legal {
+  font-size: small;
+}
 .reveal .caption {
   position: absolute;
   right: 0;
   bottom: 0;
-  font-size: small;
 }
 
 @media print {
