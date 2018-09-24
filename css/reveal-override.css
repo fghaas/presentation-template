@@ -1,8 +1,5 @@
 @charset "UTF-8";
-@import url(//fonts.googleapis.com/css?family=Cabin:400,700);
-@import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
-@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-@import url(//cdn.jsdelivr.net/npm/hack-font/build/web/hack.css);
+@import url(fonts.css);
 .reveal {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: normal;
@@ -150,7 +147,8 @@
 
 @media print {
   .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-    color: black;
+    color: black !important;
+    text-shadow: none;
   }
 }
 .qrcode img {
