@@ -54,29 +54,18 @@
     <script src="qrcodejs/qrcode.js"></script>
     <script>
 /* Grab all links and iterate over them */
-var sources = document.getElementsByTagName('a');
-n = sources.length;
-for (var i = 0; i < n; i++) {
-    var source = sources[i];
-    var href = source.href;
-
-    /* If the link has no href attribute, skip it */
-    if (href) {
-        var target_id = "qrcode-" + source.id ;
-        var target = document.getElementById(target_id);
-        /* If the source has no corresponding target element, skip
-         * it */
-        if (target) {
-            var qr = new QRCode(target, {
-                width : 500,
-                height : 500,
-                colorDark : "#000000",
-                colorLight : "rgba(255,255,255,0)",
-            });
-            qr.makeCode(href);
-        }
-    }
-}
+document.querySelectorAll('a[href]').forEach(function(a) {
+  /* Find an element named #qrcode-id, and render the QR code there */
+  document.querySelectorAll('#qrcode-' + a.id).forEach(function(target) {
+    var qr = new QRCode(target, {
+        width : 500,
+        height : 500,
+        colorDark : "#000000",
+        colorLight : "rgba(255,255,255,0)",
+    });
+    qr.makeCode(a.href);
+  });
+});
     </script>
 
     <script src="reveal.js/lib/js/head.min.js"></script>
